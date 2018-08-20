@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 
-namespace AspNetCore.IntegrationTesting.Contracts
+namespace ulinq.Contracts
 {
     /// <summary>
     /// Describers a controller action and parameters

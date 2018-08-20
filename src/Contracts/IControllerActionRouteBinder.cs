@@ -1,4 +1,4 @@
-﻿namespace AspNetCore.IntegrationTesting.Contracts
+﻿namespace ulinq.Contracts
 {
     /// <summary>
     /// Describes an abstraction to produce the inverse of a model binding operation.  Basically we want the ability to take

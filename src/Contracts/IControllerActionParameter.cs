@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace AspNetCore.IntegrationTesting.Contracts
+namespace ulinq.Contracts
 {
     /// <summary>
     ///  Describes a controller action parameter and it's actual value

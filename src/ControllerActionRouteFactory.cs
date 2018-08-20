@@ -1,7 +1,7 @@
-﻿using AspNetCore.IntegrationTesting.Contracts;
-using AspNetCore.IntegrationTesting.Models;
+﻿using ulinq.Contracts;
+using ulinq.Models;
 
-namespace AspNetCore.IntegrationTesting
+namespace ulinq
 {
     /// <summary>
     ///  A factory class for creating IControllerActionRoute instances

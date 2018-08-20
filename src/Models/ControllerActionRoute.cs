@@ -4,10 +4,10 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.RegularExpressions;
-using AspNetCore.IntegrationTesting.Contracts;
+using ulinq.Contracts;
 using Newtonsoft.Json;
 
-namespace AspNetCore.IntegrationTesting.Models
+namespace ulinq.Models
 {
     /// <summary>
     ///

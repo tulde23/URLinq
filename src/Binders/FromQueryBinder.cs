@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using System.Web;
-using AspNetCore.IntegrationTesting.Contracts;
+using ulinq.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AspNetCore.IntegrationTesting.Binders
+namespace ulinq.Binders
 {
     /// <summary>
     /// Annotated by the [FromQuery] attribute, assumes the parameter will be sent as a query string parameter on the request

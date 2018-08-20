@@ -3,13 +3,13 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Net.Http;
 using System.Reflection;
-using AspNetCore.IntegrationTesting.Contracts;
-using AspNetCore.IntegrationTesting.Models;
+using ulinq.Contracts;
+using ulinq.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Routing;
 
-namespace AspNetCore.IntegrationTesting
+namespace ulinq
 {
     /// <summary>
     /// A factory class for creating instances of IControllerAction

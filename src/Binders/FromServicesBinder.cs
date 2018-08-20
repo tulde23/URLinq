@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using AspNetCore.IntegrationTesting.Contracts;
+using ulinq.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AspNetCore.IntegrationTesting.Binders
+namespace ulinq.Binders
 {
     /// <summary>
     ///  Does nothing.  Exists for completeness.

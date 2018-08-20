@@ -1,6 +1,6 @@
-﻿using AspNetCore.IntegrationTesting.Contracts;
+﻿using ulinq.Contracts;
 
-namespace AspNetCore.IntegrationTesting.Binders
+namespace ulinq.Binders
 {
     /// <summary>
     /// An abstract base class for all action route binders.

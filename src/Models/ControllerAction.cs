@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
-using AspNetCore.IntegrationTesting.Contracts;
+using ulinq.Contracts;
 
-namespace AspNetCore.IntegrationTesting.Models
+namespace ulinq.Models
 {
     internal class ControllerAction : IControllerAction
     {

@@ -1,7 +1,7 @@
-﻿using AspNetCore.IntegrationTesting.Contracts;
+﻿using ulinq.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AspNetCore.IntegrationTesting.Binders
+namespace ulinq.Binders
 {
     /// <summary>
     /// Annotated by the [FromForm] attribute, assumes the parameter will be sent as the body or content of the request

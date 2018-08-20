@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Text;
 
 
-namespace AspNetCore.IntegrationTesting.Contracts
+namespace ulinq.Contracts
 {
     /// <summary>
     /// Describes an invokable route.

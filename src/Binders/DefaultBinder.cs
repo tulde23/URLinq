@@ -1,6 +1,6 @@
-﻿using AspNetCore.IntegrationTesting.Contracts;
+﻿using ulinq.Contracts;
 
-namespace AspNetCore.IntegrationTesting.Binders
+namespace ulinq.Binders
 {
     /// <summary>
     /// In the abscense of any model binding attributes, this will kick in by assuming the parameter is in the route

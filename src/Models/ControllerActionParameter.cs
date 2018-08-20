@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using AspNetCore.IntegrationTesting.Contracts;
+using ulinq.Contracts;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace AspNetCore.IntegrationTesting.Models
+namespace ulinq.Models
 {
     internal class ControllerActionParameter : IControllerActionParameter
     {

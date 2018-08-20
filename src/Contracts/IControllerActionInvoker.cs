@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace AspNetCore.IntegrationTesting.Contracts
+namespace ulinq.Contracts
 {
     /// <summary>
     /// Describes an abstraction for invoking an IControllerAction

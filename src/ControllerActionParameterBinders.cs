@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using AspNetCore.IntegrationTesting.Binders;
-using AspNetCore.IntegrationTesting.Contracts;
+using ulinq.Binders;
+using ulinq.Contracts;
 
-namespace AspNetCore.IntegrationTesting
+namespace ulinq
 {
     /// <summary>
     /// A factory class for applying binders to a route
