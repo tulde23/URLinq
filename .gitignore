@@ -1,0 +1,6 @@
+
+\.vs
+src/bin
+src/obj
+tests/UnitTests/bin
+tests/UnitTests/obj

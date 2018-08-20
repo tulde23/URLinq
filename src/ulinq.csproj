@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Description>ulinq is a simple library allowing you to run integration tests against your controllers in a strongly typed manner.  No more magic route strings and determining what HttpMethod to invoke. You can invoke your controller with one line of code!</Description>
+    <Summary>ulinq is a simple library allowing you to run integration tests against your controllers in a strongly typed manner.  No more magic route strings and determining what HttpMethod to invoke. You can invoke your controller with one line of code!</Summary>
+
+    <Copyright></Copyright>
+    <IsPackable>true</IsPackable>
+    <Title>ulinq is a simple library allowing you to run integration tests against your controllers in a strongly typed manner</Title>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/tulde23/ulinq/master/lic.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/tulde23/ulinq</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/tulde23/ulinq/master/src/net-core-logo-proposal.jpg</PackageIconUrl>
+    <RepositoryUrl>https://github.com/tulde23/ulinq</RepositoryUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>AspNetCore, Integration, Controllers, Testing</PackageTags>
+    <PackageReleaseNotes>Initial Release
+2.0.2 - Added controller action route attribute inspection
+3.0.0 - Upgraded to netcore 2.1</PackageReleaseNotes>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <PackageId>ulinq</PackageId>
+    <Authors>Jason Tully</Authors>
+    <Company>Jason Tully</Company>
+    <Product>ulinq</Product>
+    <Version>3.0.3</Version>
+    <AssemblyVersion>3.0.3.0</AssemblyVersion>
+
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.1\ulinq.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.1\ulinq.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="2.1.0" />
+    <PackageReference Include="Moq" Version="4.9.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+  </ItemGroup>
+ 
+</Project>
