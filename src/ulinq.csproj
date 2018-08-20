@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <Description>ulinq is a simple library allowing you to run integration tests against your controllers in a strongly typed manner.  No more magic route strings and determining what HttpMethod to invoke. You can invoke your controller with one line of code!</Description>
+    <Description>ULinq is a .NET standard library that converts MVC/WebAPI controller actions into URLs. It is particularly useful for integration testing.
+</Description>
     <Summary>ulinq is a simple library allowing you to run integration tests against your controllers in a strongly typed manner.  No more magic route strings and determining what HttpMethod to invoke. You can invoke your controller with one line of code!</Summary>
 
     <Copyright></Copyright>
@@ -10,14 +11,12 @@
     <Title>ulinq is a simple library allowing you to run integration tests against your controllers in a strongly typed manner</Title>
     <PackageLicenseUrl>https://raw.githubusercontent.com/tulde23/ulinq/master/lic.txt</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/tulde23/ulinq</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/tulde23/ulinq/master/src/net-core-logo-proposal.jpg</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/tulde23/ulinq/master/u.jpg</PackageIconUrl>
     <RepositoryUrl>https://github.com/tulde23/ulinq</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
-    <PackageTags>AspNetCore, Integration, Controllers, Testing</PackageTags>
-    <PackageReleaseNotes>Initial Release
-2.0.2 - Added controller action route attribute inspection
-3.0.0 - Upgraded to netcore 2.1</PackageReleaseNotes>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageTags>AspNetCore, Integration, Controllers, Testing, linq, netcore,integration-testing</PackageTags>
+    <PackageReleaseNotes>Initial Release 0.1.0</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
@@ -25,8 +24,8 @@
     <Authors>Jason Tully</Authors>
     <Company>Jason Tully</Company>
     <Product>ulinq</Product>
-    <Version>3.0.3</Version>
-    <AssemblyVersion>3.0.3.0</AssemblyVersion>
+    <Version>0.1.0</Version>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
 
   </PropertyGroup>
 
