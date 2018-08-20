@@ -1,10 +1,24 @@
 # ulinq
-ULinq is a .NET standard library that converts MVC/WebAPI controller actions into URLs. It is particularly useful for integration testing.  Think of it as the inverse of model binding.
+ULinq is a .NET standard library that converts MVC/WebAPI controller actions into URLs. It is particularly useful for integration testing.
 
-Our goal is to refactor this:
+
+Take for example the following controller:
+
+``` csharp
+[Route("api/v1/[controller])]
+public class WeatherController : Controller{
+  
+   [HttpGet]
+   public Task<int> GetCurrentTemperatureByPostalCode(int postalCode){
+      return Task.FromResult(85);
+   }
+}
+```
+
+Our goal is to refactor this integration test:
 ```csharp
   [Theory]
- [MemberData(nameof(CommonData))]
+ [InlineData(19106,85)]
  public async Task GetWeatherForPostalCode(int postalCode, int expectedResult){
   
     var response = await Client.GetAsync($"/api/v1/Weather?postalCode={postalCode}");
@@ -17,9 +31,9 @@ Our goal is to refactor this:
 Into this:
 ``` csharp
  [Theory]
- [MemberData(nameof(CommonData))]
+ [InlineData(19106,85)]
  public  async Task GetWeatherForPostalCode(int postalCode, int expectedResult){
-    var route = RouteHelper.GetRoute<WeatherController, int>(controller => controller.GetByPostalCode(postalCode));
+    var route = RouteHelper.GetRoute<WeatherController, int>(controller => controller.GetCurrentTemperatureByPostalCode(postalCode));
     var response = await Client.GetAsync(route.ToString());
     var json = await response.Content.ReadAsStringAsync();
     var data = JsonConvert.DeserializeObject<int>(json);
@@ -27,6 +41,7 @@ Into this:
    
 }
 ```
+
 ### Customization
 
 For most scenarios, the default model binders should be able to map your action parameters back to a URI.  However, in some cases, like custom model binders, you will need to write a bit of code to help out.
@@ -65,7 +80,7 @@ First create the route binder:
     } 
 ```
 
-Now let's register our binder. You do this in our IntegrationTestFixture constructor.
+Now let's register our binder. 
 ``` csharp
 
         ControllerActionParameterBinders.AddBinders(new CustomFromModelBinder());
