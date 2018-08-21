@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ulinq.Contracts;
+using URLinq.Contracts;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace ulinq.Models
+namespace URLinq.Models
 {
     internal class ControllerActionParameter : IControllerActionParameter
     {

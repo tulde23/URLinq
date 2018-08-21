@@ -4,10 +4,10 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.RegularExpressions;
-using ulinq.Contracts;
+using URLinq.Contracts;
 using Newtonsoft.Json;
 
-namespace ulinq.Models
+namespace URLinq.Models
 {
     /// <summary>
     ///

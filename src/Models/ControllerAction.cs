@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
-using ulinq.Contracts;
+using URLinq.Contracts;
 
-namespace ulinq.Models
+namespace URLinq.Models
 {
     internal class ControllerAction : IControllerAction
     {

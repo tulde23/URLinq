@@ -1,6 +1,6 @@
-﻿using ulinq.Contracts;
+﻿using URLinq.Contracts;
 
-namespace ulinq.Binders
+namespace URLinq.Binders
 {
     /// <summary>
     /// In the abscense of any model binding attributes, this will kick in by assuming the parameter is in the route

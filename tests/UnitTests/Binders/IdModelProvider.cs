@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ulinq.Binders;
-using ulinq.Contracts;
+using URLinq.Binders;
+using URLinq.Contracts;
 
 namespace UnitTests.Models
 {

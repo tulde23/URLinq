@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 
-namespace ulinq.Contracts
+namespace URLinq.Contracts
 {
     /// <summary>
     /// Describers a controller action and parameters

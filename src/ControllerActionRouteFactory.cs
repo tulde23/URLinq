@@ -1,7 +1,7 @@
-﻿using ulinq.Contracts;
-using ulinq.Models;
+﻿using URLinq.Contracts;
+using URLinq.Models;
 
-namespace ulinq
+namespace URLinq
 {
     /// <summary>
     ///  A factory class for creating IControllerActionRoute instances

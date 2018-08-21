@@ -1,7 +1,7 @@
-﻿using ulinq.Contracts;
+﻿using URLinq.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ulinq.Binders
+namespace URLinq.Binders
 {
     /// <summary>
     /// Annotated by the [FromHeader] attribute, assumes the parameter will be sent within the header of the request

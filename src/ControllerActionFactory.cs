@@ -3,13 +3,13 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Net.Http;
 using System.Reflection;
-using ulinq.Contracts;
-using ulinq.Models;
+using URLinq.Contracts;
+using URLinq.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Routing;
 
-namespace ulinq
+namespace URLinq
 {
     /// <summary>
     /// A factory class for creating instances of IControllerAction

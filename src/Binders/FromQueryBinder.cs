@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using System.Web;
-using ulinq.Contracts;
+using URLinq.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ulinq.Binders
+namespace URLinq.Binders
 {
     /// <summary>
     /// Annotated by the [FromQuery] attribute, assumes the parameter will be sent as a query string parameter on the request

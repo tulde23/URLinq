@@ -1,12 +1,12 @@
-﻿using ulinq.Contracts;
+﻿using URLinq.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ulinq.Binders
+namespace URLinq.Binders
 {
     /// <summary>
     /// Annotated by the [FromRoute] attribute, assumes the parameter will be sent as a route parameter on the request.
     /// </summary>
-    /// <seealso cref="ulinq.Binders.AbstractRouteBinder" />
+    /// <seealso cref="URLinq.Binders.AbstractRouteBinder" />
     /// <seealso cref="AbstractRouteBinder" />
     internal class FromRouteBinder : AbstractRouteBinder
     {

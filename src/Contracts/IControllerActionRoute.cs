@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Text;
 
 
-namespace ulinq.Contracts
+namespace URLinq.Contracts
 {
     /// <summary>
     /// Describes an invokable route.

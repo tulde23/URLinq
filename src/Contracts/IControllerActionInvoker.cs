@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace ulinq.Contracts
+namespace URLinq.Contracts
 {
     /// <summary>
     /// Describes an abstraction for invoking an IControllerAction

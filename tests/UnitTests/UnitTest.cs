@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Bogus;
 using FluentAssertions;
 using Newtonsoft.Json;
-using ulinq;
+using URLinq;
 using UnitTests.Controllers;
 using UnitTests.Models;
 using Xunit;

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ulinq.Contracts;
+using URLinq.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ulinq.Binders
+namespace URLinq.Binders
 {
     /// <summary>
     ///  Does nothing.  Exists for completeness.

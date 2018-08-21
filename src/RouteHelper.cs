@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Net.Http;
-using ulinq.Contracts;
+using URLinq.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ulinq
+namespace URLinq
 {
     /// <summary>
     /// A utility class for interacting with routes

@@ -1,6 +1,6 @@
-﻿using ulinq.Contracts;
+﻿using URLinq.Contracts;
 
-namespace ulinq.Binders
+namespace URLinq.Binders
 {
     /// <summary>
     /// An abstract base class for all action route binders.

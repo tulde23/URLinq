@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using ulinq.Binders;
-using ulinq.Contracts;
+using URLinq.Binders;
+using URLinq.Contracts;
 
-namespace ulinq
+namespace URLinq
 {
     /// <summary>
     /// A factory class for applying binders to a route
