@@ -10,9 +10,9 @@
     <IsPackable>true</IsPackable>
     <Title>ulinq is a simple library allowing you to run integration tests against your controllers in a strongly typed manner</Title>
     <PackageLicenseUrl>https://raw.githubusercontent.com/tulde23/ulinq/master/lic.txt</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/tulde23/ulinq</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/tulde23/URLLinq</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/tulde23/ulinq/master/u.jpg</PackageIconUrl>
-    <RepositoryUrl>https://github.com/tulde23/ulinq</RepositoryUrl>
+    <RepositoryUrl>https://github.com/tulde23/URLLinq</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageTags>AspNetCore, Integration, Controllers, Testing, linq, netcore,integration-testing</PackageTags>
     <PackageReleaseNotes>Initial Release 0.1.0</PackageReleaseNotes>
@@ -20,12 +20,12 @@
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
-    <PackageId>ulinq</PackageId>
+    <PackageId>URLinq</PackageId>
     <Authors>Jason Tully</Authors>
     <Company>Jason Tully</Company>
     <Product>ulinq</Product>
-    <Version>0.1.0</Version>
-    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <Version>0.1.1</Version>
+    <AssemblyVersion>0.1.1.0</AssemblyVersion>
 
   </PropertyGroup>
 
