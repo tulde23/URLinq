@@ -28,6 +28,7 @@ namespace URLinq
             }
             var controllerAction = ControllerActionFactory.GetAction(expression);
             var route = ControllerActionRouteFactory.CreateRoute(controllerAction);
+
             return route.BuildRequestMessage(controllerAction);
         }
 

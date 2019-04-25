@@ -14,11 +14,12 @@ namespace URLinq
     /// <summary>
     /// A factory class for creating instances of IControllerAction
     /// </summary>
-    internal static class ControllerActionFactory
+    public static class ControllerActionFactory
     {
         /// <summary>
-        /// Converts a controller action expression to an instance of IControllerAction.  This instance will contain
-        /// all metadata needed to decompose captured parameter values from the caller into an invokable http request.
+        /// Converts a controller action expression to an instance of IControllerAction. This
+        /// instance will contain all metadata needed to decompose captured parameter values from the
+        /// caller into an invokable http request.
         /// </summary>
         /// <typeparam name="TController">The type of the controller.</typeparam>
         /// <param name="controllerActionExpression">The controller action expression.</param>
@@ -82,15 +83,17 @@ namespace URLinq
             }
             return controllerAction;
         }
+
         /// <summary>
-        /// Converts a controller action expression to an instance of IControllerAction.  This instance will contain
-        /// all metadata needed to decompose captured parameter values from the caller into an invokable http request.
+        /// Converts a controller action expression to an instance of IControllerAction. This
+        /// instance will contain all metadata needed to decompose captured parameter values from the
+        /// caller into an invokable http request.
         /// </summary>
         /// <typeparam name="TController">The type of the controller.</typeparam>
         /// <param name="controllerActionExpression">The controller action expression.</param>
         /// <returns></returns>
         /// <exception cref="InvalidOperationException">You must supply an HttpMethod</exception>
-        public static IControllerAction GetAction<TController,TResponse>(Expression<Func<TController, TResponse>> controllerActionExpression)
+        public static IControllerAction GetAction<TController, TResponse>(Expression<Func<TController, TResponse>> controllerActionExpression)
         {
             //get the controller type
             var controllerType = typeof(TController);
