@@ -1,9 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <Description>ULinq is a .NET standard library that converts MVC/WebAPI controller actions into URLs. It is particularly useful for integration testing.
-</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>
+      ULinq is a .NET standard library that converts MVC/WebAPI controller actions into URLs. It is particularly useful for integration testing.
+    </Description>
     <Summary>ulinq is a simple library allowing you to run integration tests against your controllers in a strongly typed manner.  No more magic route strings and determining what HttpMethod to invoke. You can invoke your controller with one line of code!</Summary>
 
     <Copyright></Copyright>
@@ -24,9 +25,8 @@
     <Authors>Jason Tully</Authors>
     <Company>Jason Tully</Company>
     <Product>ulinq</Product>
-    <Version>0.1.1</Version>
-    <AssemblyVersion>0.1.1.0</AssemblyVersion>
-
+    <Version>2.2.0</Version>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -37,7 +37,6 @@
     <DocumentationFile>bin\Debug\netcoreapp2.1\ulinq.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
   </ItemGroup>
- 
 </Project>
