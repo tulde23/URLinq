@@ -69,17 +69,17 @@ namespace URLinq
             //if there are any controller scoped route attributes push them into our segment list
             foreach (var a in controllerAttributes)
             {
-                controllerAction.RouteSegments.Add(a.Template);
+                controllerAction.AddRouteSegment(a.Template);
             }
 
             //process the template on the httpMethod attribute
             if (!string.IsNullOrEmpty(httpMethodAttribute.Template))
             {
-                controllerAction.RouteSegments.Add(httpMethodAttribute.Template);
+                controllerAction.AddRouteSegment(httpMethodAttribute.Template);
             }
             if (routeAttribute != null && !String.IsNullOrEmpty(routeAttribute.Template))
             {
-                controllerAction.RouteSegments.Add(routeAttribute.Template);
+                controllerAction.AddRouteSegment(routeAttribute.Template);
             }
             return controllerAction;
         }
@@ -137,17 +137,17 @@ namespace URLinq
             //if there are any controller scoped route attributes push them into our segment list
             foreach (var a in controllerAttributes)
             {
-                controllerAction.RouteSegments.Add(a.Template);
+                controllerAction.AddRouteSegment(a.Template);
             }
 
             //process the template on the httpMethod attribute
             if (!string.IsNullOrEmpty(httpMethodAttribute.Template))
             {
-                controllerAction.RouteSegments.Add(httpMethodAttribute.Template);
+                controllerAction.AddRouteSegment(httpMethodAttribute.Template);
             }
             if (routeAttribute != null && !String.IsNullOrEmpty(routeAttribute.Template))
             {
-                controllerAction.RouteSegments.Add(routeAttribute.Template);
+                controllerAction.AddRouteSegment(routeAttribute.Template);
             }
             return controllerAction;
         }

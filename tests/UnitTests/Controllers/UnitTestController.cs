@@ -15,22 +15,26 @@ namespace UnitTests.Controllers
         {
             return Task.FromResult(Guid.NewGuid().ToString());
         }
+
         [HttpGet("SubRoute")]
         public Task<string> GetStringSubRoute([FromQuery] string id)
         {
             return Task.FromResult(Guid.NewGuid().ToString());
         }
+
         [HttpGet("{myId}")]
         public Task<string> GetStringWithRouteParameter([FromRoute] string myId)
         {
             return Task.FromResult(Guid.NewGuid().ToString());
         }
+
         [HttpPost]
         public Task<string> PostComplexModel([FromBody]ComplexModel complexModel)
         {
             return Task.FromResult(Guid.NewGuid().ToString());
         }
-        [HttpPost("{myId}")]
+
+        [HttpPost("/{myId}")]
         public Task<string> PostComplexModelWithId([FromBody]ComplexModel complexModel)
         {
             return Task.FromResult(Guid.NewGuid().ToString());

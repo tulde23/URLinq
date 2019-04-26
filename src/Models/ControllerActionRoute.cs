@@ -10,9 +10,8 @@ using Newtonsoft.Json;
 namespace URLinq.Models
 {
     /// <summary>
-    ///
     /// </summary>
-    /// <seealso cref="IControllerActionRoute" />
+    /// <seealso cref="IControllerActionRoute"/>
     internal class ControllerActionRoute : IControllerActionRoute
     {
         /// <summary>
@@ -68,7 +67,7 @@ namespace URLinq.Models
         /// <param name="controllerAction">The controller action.</param>
         public ControllerActionRoute(IControllerAction controllerAction)
         {
-            ParameterizedTemplate = string.Join(PathSeparator, controllerAction.RouteSegments);
+            ParameterizedTemplate = $"/" + string.Join(PathSeparator, controllerAction.RouteSegments);
             _parameterMatches = MatchRouteTokens(ParameterizedTemplate).ToList();
             _routeStringBuilder = new StringBuilder(ParameterizedTemplate);
             _routeStringBuilder.Replace(ControllerToken, controllerAction.Controller);
@@ -77,9 +76,7 @@ namespace URLinq.Models
         /// <summary>
         /// Gets the parameterized template.
         /// </summary>
-        /// <value>
-        /// The parameterized template.
-        /// </value>
+        /// <value>The parameterized template.</value>
         public string ParameterizedTemplate
         {
             get;
